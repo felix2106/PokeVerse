@@ -1,0 +1,238 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* BODY */
+body {
+    color: white;
+    background-image: url('data:image/jpeg;base64,...'); /* Substitua pelo Base64 da imagem */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(135deg, #c0c0c0, #f5f5f5, #d4d4d4);
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto no cabeçalho */
+    padding: 10px; /* Reduz o espaçamento interno */
+    font-size: 20px; /* Tamanho da fonte reduzido */
+    height: 100px; /* Altura ajustada */
+    border-bottom: 6px solid #a6a6a6;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente o conteúdo do header */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo do header */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombras para destacar o header */
+}
+
+
+header h1 {
+    font-size: 48px;
+    color: #333;
+    margin: 0;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+/* SEARCH BAR */
+/* SEARCH BAR */
+.input-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente os inputs e o botão */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 15px; /* Aumenta o espaçamento entre os inputs e o botão */
+    margin-bottom: 20px; /* Espaçamento entre os inputs e os cards */
+}
+
+.input-container input {
+    padding: 12px; /* Aumenta o padding para conforto */
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    width: 300px; /* Largura dos inputs */
+    border: 2px solid #333;
+    border-radius: 10px; /* Arredonda os cantos */
+    background-color: #ffffff; /* Fundo escuro */
+    color: rgb(0, 0, 0); /* Texto branco */
+    outline: none; /* Remove a borda padrão ao focar */
+    transition: border-color 0.3s; /* Transição suave ao focar */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.input-container input:focus {
+    border-color:  #feb73d; /* Cor do contorno ao focar */
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
+
+.input-container button {
+    padding: 12px 25px; /* Aumenta o padding */
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    cursor: pointer;
+    background-color: #71e66d; /* Cor de fundo do botão */
+    border: 2px solid #333;
+    border-radius: 10px; /* Arredonda os cantos */
+    color: #333; /* Cor do texto do botão */
+    font-weight: bold; /* Negrito */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+    font-family: 'Press Start 2P', cursive; /* Mantém a tipografia */
+    width: 150px; /* Largura fixa para o botão */
+}
+
+.input-container button:hover {
+    background-color: #0fad17e5; /* Cor do fundo ao passar o mouse */
+    transform: scale(1.1); /* Aumenta o tamanho ao passar o mouse */
+}
+
+
+/* CONTAINER */
+.container {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.comparison-container {
+    display: flex; /* Coloca os cards lado a lado */
+    justify-content: center; /* Centraliza os cards horizontalmente */
+    align-items: center; /* Centraliza os cards verticalmente */
+    gap: 20px; /* Espaçamento entre os cards */
+    height: 100vh; /* Faz o contêiner ocupar toda a altura da tela */
+    width: 100%; /* Faz o contêiner ocupar toda a largura */
+    background-color: #f4f4f4; /* Opcional: fundo para destacar os cards */
+    margin: 0; /* Remove margens externas */
+    padding: 0; /* Remove preenchimento externo */
+}
+
+.input-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente os inputs e o botão */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaçamento entre os inputs e o botão */
+    margin-bottom: 20px; /* Espaçamento entre os inputs e os cards */
+    right: 40px;
+}
+
+.input-container input,
+.input-container button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comparison-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente os cards */
+    align-items: center; /* Centraliza verticalmente os cards */
+    gap: 20px; /* Espaçamento entre os cards */
+}
+/* POKEMON CARD */
+.pokemon-card {
+    background: linear-gradient(135deg, rgba(0, 173, 255, 0.4), rgba(0, 140, 255, 0.3), rgba(0, 100, 255, 0.5)); /* Gradiente azul com opacidade */
+    backdrop-filter: blur(8px); /* Efeito de desfoque */
+    border: 8px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    width: 500px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pokemon-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 5px solid #000;
+    margin-bottom: 10px;
+}
+
+.pokemon-card h2, .pokemon-card p {
+    margin: 5px 0;
+}
+
+/* INFO BOX */
+.info-box {
+    width: 350px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #c0c0c0, #f5f5f5, #d4d4d4);
+    border: 3px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #c0c0c0, #f5f5f5, #d4d4d4);
+    border-top: 6px solid #a6a6a6;
+    color: #333;
+    font-size: 18px; /* Tamanho da fonte aumentado */
+    height: 900px; /* Altura ajustada */
+}
+
+.footer-gif {
+    width: 50px;
+    position: absolute;
+    bottom: -203px;
+    right: 10px;
+}
+.back-button {
+    position: fixed;
+    top: 20px; /* Distância do topo da tela */
+    right: 20px; /* Distância da borda direita da tela */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fffb00;
+    border: 2px solid #333;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-family: 'Press Start 2P', cursive;
+    width: 150px;
+    height: 40px;
+}
+
+.back-button:hover {
+    background-color: #ffad15e5;
+    transform: scale(1.2); /* Aumenta o tamanho do botão ao passar o mouse */
+}
+.pokemon-title {
+    color: blue; /* Define a cor dos títulos para azul */
+    font-weight: bold; /* Opcional: deixa o texto mais destacado */
+}
+
+.pokemon-info {
+    color: rgb(0, 0, 0); /* Define a cor do restante da informação para branco */
+}

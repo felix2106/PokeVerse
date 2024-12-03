@@ -1,0 +1,444 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    background-image: url(''); /* Adicione o caminho para sua imagem de fundo */
+    background-size: cover; /* Garante que a imagem cubra toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* A imagem ficará fixa ao rolar a página */
+    background-image: url('https://pokemongophilippines.wordpress.com/wp-content/uploads/2016/08/whosthatpokemon_1349921665_7.jpg'); /* Continue com sua imagem base64 */
+    color: #f8f8f8;
+    text-shadow: -1px -1px 0 #000, 1px 1px 0 #000;
+}
+
+/* Container geral */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.paralelogramo {
+    width: 860px;
+    height: 460px;
+    background: linear-gradient(135deg, #c0c0c0, #f5f5f5, #d4d4d4);
+    position: absolute;
+    top: 60%; /* Ajustado para um valor mais centralizado */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 60px;
+    border: 6px solid #a6a6a6;
+    z-index: 10;
+    transition: transform 0.3s ease, opacity 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.paralelogramo.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.seta {
+    width: 70px;
+    height: 50px;
+    background: linear-gradient(135deg, #d4d4d4, #f5f5f5, #c0c0c0); /* Gradiente prateado */
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: absolute;
+    z-index: 5;
+    border-radius: 10px;
+    border-bottom: 3px solid #a6a6a6;
+}
+
+.seta-esquerda {
+    left: -120px; /* Distância ajustada */
+    top: 50%;
+    transform: translateY(-50%) skewX(20deg); /* Torna as setas inclinadas */
+}
+
+.seta-direita {
+    right: -120px; /* Distância ajustada */
+    top: 50%;
+    transform: translateY(-50%) skewX(-20deg); /* Torna as setas inclinadas */
+}
+
+.seta:hover {
+    transform: scale(1.1) translateY(-5px); /* Leve movimento no hover */
+}
+
+
+/* Ajuste da logo */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 50px; /* Move a logo para a direita */
+    position: relative;
+    top: -6px; /* Ajuste opcional para manter a posição vertical */
+}
+
+
+/* Imagem da logo */
+.logo img {
+    width: 80px; /* Aumenta o tamanho da imagem */
+    height: auto; 
+    max-height: 120px; /* Limita a altura da imagem */
+}
+
+/* Título */
+.logo span {
+    font-size: 2rem; /* Aumenta o tamanho do título */
+    color: #ffcb05;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+header {
+    background: linear-gradient(135deg, #d4d4d4, #f5f5f5, #c0c0c0); /* Gradiente prateado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem; /* Diminui o padding para reduzir o tamanho */
+    border-bottom: 6px solid #a6a6a6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    height: 115px; /* Ajuste para diminuir a altura do cabeçalho */
+}
+
+
+
+footer {
+    background: linear-gradient(135deg, #c0c0c0, #f5f5f5, #d4d4d4); /* Gradiente prateado */
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 6px solid #a6a6a6;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+    text-shadow: 
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo da imagem no rodapé */
+.footer-image {
+    width: 30px; /* Ajuste o tamanho da imagem */
+    height: auto;
+    margin-left: 10px; /* Espaçamento entre o texto e a imagem */
+}
+
+/* Navegação */
+nav.menu {
+    display: flex;
+    justify-content: center; /* Centraliza os itens do menu */
+    flex-grow: 1; /* O menu ocupa o restante do espaço */
+}
+
+/* Ajuste do menu */
+nav.menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 25px 0 0; /* Margem superior adicionada para descer o menu */
+}
+
+nav.menu ul li a {
+    background-color: #b8b8b8;
+    color: #f8f8f8;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: 3px solid #a6a6a6;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    display: inline-block;
+    transform: skew(-20deg); /* Inclinação para formar um paralelogramo */
+}
+
+/* Ajuste para que o texto dentro do link não fique inclinado */
+nav.menu ul li a span {
+    display: inline-block;
+    transform: skew(20deg); /* Corrige a inclinação do texto */
+}
+
+/* Estilo hover para manter o efeito de paralelogramo */
+nav.menu ul li a:hover {
+    transform: scale(1.2) skew(-20deg); /* Aumenta o tamanho mantendo o formato */
+    background-color:#9c9c9c
+}
+
+/* Ícone de menu (☰) */
+#open-sidebar {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 0.5rem 1rem; /* Ajustando o padding para igual aos links do menu */
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: absolute; /* Posiciona o ícone à direita */
+    right: 20px; /* Ajuste para a distância da borda direita */
+}
+
+#open-sidebar:hover {
+    transform: scale(1.2); /* Aumenta o tamanho ao passar o mouse */
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo suave */
+}
+
+/* Seção de introdução */
+.intro {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.intro h1 {
+    font-size: 2rem;
+    color: #ffcb05;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.intro p {
+    color: #fff;
+    line-height: 1.8;
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 1rem auto;
+}
+
+.intro .btn {
+    display: inline-block;
+    background: #a6a6a6;
+    color: #1a1a1a;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.intro .btn:hover {
+    background: #a6a6a6;
+}
+
+.footer-gif {
+    width: 50px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Menu */
+.menu ul {
+    display: flex; /* Itens lado a lado */
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding padrão */
+    margin: 0; /* Remove margens padrão */
+}
+
+/* Menu */
+.menu ul li {
+    margin: 0 2em; /* Aumenta o espaçamento horizontal entre os itens */
+    padding: 0.5rem 0; /* Ajusta o padding vertical se necessário */
+}
+
+.menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px; /* Mantém o tamanho da fonte */
+    padding: 5px 12px; /* Diminui o padding para reduzir a altura */
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
+    line-height: 2.2; /* Ajusta a altura da linha para reduzir a altura */
+    text-shadow: 
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+}
+
+#open-sidebar {
+    font-size: 1.5rem; /* Tamanho do ícone */
+    padding: 10px 12px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
+}
+
+#open-sidebar:hover {
+    background-color: #9c9c9c; /* Fundo escuro ao passar o mouse */
+    transform: scale(1.2); /* Aumenta o tamanho do ícone */
+}
+
+/* Navbar / Menu */
+nav.menu {
+    display: flex; /* Alinha itens horizontalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    height: 80px; /* Altura do menu */
+    line-height: 80px; /* Alinha o texto verticalmente */
+    margin-bottom: 2rem;
+    padding: 0 2rem; /* Adiciona espaço ao redor do conteúdo */
+}
+
+/* Barra lateral */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(135deg, #d4d4d4, #f5f5f5, #c0c0c0); /* Gradiente prateado */
+    color: #fff;
+    padding: 20px;
+    transition: right 0.3s ease;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-shadow: 
+    -1px -1px 0 #000000,  
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000,
+    1px 1px 0 #000000;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaçamento entre os itens */
+}
+
+.sidebar ul li {
+    background-color:#b8b8b8; /* Fundo suave */
+    border: 4px solid #a6a6a6; /* Borda ao redor do paralelogramo */
+    transform: skew(-20deg); /* Aplica o formato de paralelogramo */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    display: block; /* Faz o link ocupar todo o espaço do `li` */
+    padding: 10px 12px;
+    transform: skew(20deg); /* Reverte o efeito do skew no texto */
+    text-shadow: 
+        -1px -1px 0 #000000,  
+        1px -1px 0 #000000,
+        -1px 1px 0 #000000,
+        1px 1px 0 #000000;
+}
+
+.sidebar ul li:hover {
+    background-color: #9c9c9c; /* Cor de fundo no hover */
+    transform: scale(1.05) skew(-20deg); /* Destaca o paralelogramo no hover */
+}
+#close-sidebar {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    color: red;
+    cursor: pointer;
+    position: relative; /* Necessário para posicionar o pseudo-elemento */
+    overflow: hidden; /* Garante que o círculo não ultrapasse os limites do botão */
+    z-index: 1;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 40px; /* Tamanho do botão */
+    height: 40px; /* Tamanho do botão */
+}
+
+#close-sidebar img {
+    width: 100%; /* Faz a imagem ocupar todo o botão */
+    height: 100%; /* Faz a imagem ocupar todo o botão */
+    object-fit: contain; /* Garante que a imagem seja proporcional */
+}
+
+/* Pseudo-elemento para o círculo */
+#close-sidebar::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 0, 0, 0.5); /* Cor do círculo (transparente vermelho) */
+    border-radius: 50%; /* Forma circular */
+    transform: translate(-50%, -50%); /* Centraliza o círculo */
+    z-index: -1; /* Mantém o círculo atrás do botão */
+    transition: width 0.4s ease, height 0.4s ease; /* Transição suave */
+}
+
+/* Efeito ao passar o mouse */
+#close-sidebar:hover::after {
+    width: 120px; /* Tamanho final do círculo */
+    height: 120px; /* Tamanho final do círculo */
+}
+
+/* Efeito ao clicar */
+#close-sidebar:active::after {
+    width: 150px; /* Pode ser maior que o hover para dar destaque ao clique */
+    height: 150px;
+}
+
+#sidebar.hidden {
+    right: -350px;
+}
+
+/* Mostrando a barra lateral */
+#sidebar.visible {
+    right: 0;
+}
+/* Ícone de menu (☰) */
+#open-sidebar {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 0.1px 1rem; /* Diminuído para ficar do mesmo tamanho que os outros itens */
+    border-radius: 5px;
+    border: 3px solid #a6a6a6;
+    position: absolute; /* Posiciona o ícone à direita */
+    right: 20px; /* Ajuste para a distância da borda direita */
+    
+}
+/* Título com animação de aparição */
+
+
+/* Definição da animação */
+@keyframes fadeInZoom {
+    0% {
+        opacity: 0;
+        transform: scale(0.8); /* Começa menor */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Fica no tamanho original */
+    }
+}

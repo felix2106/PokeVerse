@@ -1,0 +1,116 @@
+        body {
+            background-color: #121212;
+            color: rgb(0, 0, 0);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            text-align: center;
+        }
+        .quiz-container, .difficulty-container {
+            border-top: 6px solid #a6a6a6;
+            padding: 40px; /* Aumentado o espaçamento interno */
+            border-radius: 10px;
+            background: linear-gradient(135deg, #c0c0c0, #f5f5f5, #d4d4d4);
+            min-height: 200px; /* Define uma altura mínima */
+            width: 90%; /* Ajuste a largura conforme necessário */
+            height: 400px;
+            margin: 0 auto; /* Centraliza os containers */
+        }
+        
+        button {
+            margin: 10px 5px;
+            padding: 10px 20px;
+            background-color: #ffff18;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            font-family: 'Press Start 2P', cursive;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #fca400e5;
+            transform: scale(1.2); /* Aumenta o tamanho do botão ao passar o mouse */
+        }
+        #resultMessage, #score, #gameOver {
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+        #gameOver {
+            color: rgb(144, 39, 39);
+        }
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: rgb(7, 6, 6);
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .back-button {
+            position: fixed;
+            top: 20px; /* Distância do topo da tela */
+            right: 20px; /* Distância da borda direita da tela */
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #fffb00;
+            border: 2px solid #333;
+            border-radius: 5px;
+            color: #333;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            font-family: 'Press Start 2P', cursive;
+            width: 150px;
+            height: 40px;
+        }
+        
+        .back-button:hover {
+            background-color: #ffad15e5;
+            transform: scale(1.2); /* Aumenta o tamanho do botão ao passar o mouse */
+        }
+        footer {
+            text-align: center;
+            padding: 5px; /* Reduz o espaçamento interno do footer */
+            background: linear-gradient(135deg, #c0c0c0, #f5f5f5, #d4d4d4);
+            border-top: 6px solid #a6a6a6;
+            color: #333;
+            font-size: 18px; /* Tamanho da fonte */
+            height: 70px; /* Altura ajustada para um footer menor */
+        }
+        
+        .footer-gif {
+            width: 50px;
+            position: absolute;
+            bottom: -2px;
+            right: 10px;
+        }
+        header {
+            background: linear-gradient(135deg, #c0c0c0, #f5f5f5, #d4d4d4);
+            color: white; /* Cor do texto */
+            text-align: center; /* Centraliza o texto no cabeçalho */
+            padding: 10px; /* Reduz o espaçamento interno */
+            font-size: 20px; /* Tamanho da fonte reduzido */
+            height: 100px; /* Altura ajustada */
+            border-bottom: 6px solid #a6a6a6;
+            display: flex;
+            align-items: center; /* Centraliza verticalmente o conteúdo do header */
+            justify-content: center; /* Centraliza horizontalmente o conteúdo do header */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombras para destacar o header */
+        }
+        
+        
+        header h1 {
+            font-size: 48px;
+            color: #333;
+            margin: 0;
+        }
+        body, html {
+            font-family: 'Press Start 2P', Arial, sans-serif;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }

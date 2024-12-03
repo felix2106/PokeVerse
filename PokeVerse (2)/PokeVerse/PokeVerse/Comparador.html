@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Pokémon</title>
+    <link rel="stylesheet" href="CSS/Comparador.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+        </div>
+        <h1>Mapas Pokemon</h1>
+        <a href="menu.html">
+            <button class="back-button">Voltar</button>
+        </a>
+    </header>
+    <br>
+    <br>
+    <br>
+    <div class="input-container">
+        <input type="text" id="pokemon1" placeholder="Nome ou ID do Pokémon 1" />
+        <input type="text" id="pokemon2" placeholder="Nome ou ID do Pokémon 2" />
+        <button id="compareButton">Comparar</button>
+        <button id="clearButton" style="background-color: red; color: white;">Limpar</button>
+    </div>
+    
+    <div class="comparison-container">
+        <div id="poke1" class="pokemon-card"></div>
+        <div id="poke2" class="pokemon-card"></div>
+    </div>
+
+
+    <footer>
+        <br>
+        <p>@ 2024 PokeVerse - Interfaces Web - 2Aa Informática</p>
+    </footer>
+    <img src="https://25.media.tumblr.com/144d30a86c175d0d4843b26669913b30/tumblr_msu2d6x4WM1scncwdo1_500.gif" alt="Pikachu" class="footer-gif">
+    <script src="JS/Comparador.js"></script>
+</body>
+</html>

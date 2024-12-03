@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Finder</title>
+    <link rel="stylesheet" href="CSS/Pokedex.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://joaoletras.wordpress.com/wp-content/uploads/2012/10/fundo.png?w=836" alt="Logo do PokeVerse">
+        </div>
+        <h1>Pokédex</h1>
+    </header>
+
+
+    <!-- Botão de Voltar -->
+   <a href="menu.html">
+    <button class="back-button">Voltar</button>
+   </a>
+
+    <!-- Barra de pesquisa -->
+    <div class="search-bar">
+        <input type="text" id="pokemonInput" placeholder="Digite nome ou ID do Pokémon  ">
+        <button onclick="fetchPokemon()">Buscar</button>
+        <button id="clearButton">Limpar</button>
+    </div>
+
+    
+
+    <!-- Retângulo dedicado às informações da API -->
+    <main>
+        <div class="info-box">
+            <div id="pokemonInfo"></div>
+        </div>
+    </main>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <br>
+        <p>@ 2024 PokeVerse - Interfaces Web - 2Aa Informática</p>
+    </footer>
+    <img src="https://25.media.tumblr.com/144d30a86c175d0d4843b26669913b30/tumblr_msu2d6x4WM1scncwdo1_500.gif" alt="Pikachu" class="footer-gif">
+    <script src="JS/Pokedex.js"></script>
+</body>
+</html>

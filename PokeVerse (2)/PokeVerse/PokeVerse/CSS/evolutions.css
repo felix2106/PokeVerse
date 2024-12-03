@@ -1,0 +1,187 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Usar uma fonte mais moderna */
+    background-color: #f0f4f8; /* Um fundo mais suave */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px; /* Espaçamento maior no topo */
+    font-size: 2.5rem; /* Aumenta o tamanho do título */
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra para o título */
+}
+
+#pokemonDetails {
+    background-color: #ffffff; /* Fundo branco para melhor contraste */
+    padding: 30px; /* Aumenta o padding para mais espaço interno */
+    border-radius: 10px; /* Arredonda mais as bordas */
+    max-width: 320px; /* Largura máxima aumentada */
+    margin: 20px auto; /* Margem superior e inferior aumentadas */
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    transition: box-shadow 0.3s; /* Transição suave para a sombra */
+}
+
+#pokemonDetails h2 {
+    font-size: 2rem; /* Mantém o tamanho do subtítulo */
+    color: #444; /* Leve ajuste na cor */
+    margin: 10px 0; /* Margem ajustada */
+}
+
+#pokemonDetails img {
+    width: 220px; /* Aumenta um pouco a largura da imagem */
+    border-radius: 8px; /* Mantém bordas arredondadas na imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil na imagem */
+}
+
+#evolutionChain {
+    margin: 20px auto; /* Espaçamento maior */
+    max-width: 900px; /* Largura máxima para a cadeia de evolução */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+#evolutionChain div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#evolutionChain h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+#evolutionChain img {
+    width: 200px; /* Aumenta a largura da imagem na cadeia de evolução */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15); /* Sombra mais suave */
+}
+
+@media (max-width: 768px) {
+    #evolutionChain {
+        flex-direction: column; /* Alinha os itens em coluna em telas menores */
+        align-items: center;
+    }
+}
+
+/* Estilo do botão */
+#backButton {
+    display: block;
+    width: 220px; /* Aumenta a largura do botão */
+    padding: 12px; /* Aumenta o padding do botão */
+    background-color: #4CAF50; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-align: center;
+    text-decoration: none;
+    margin: 30px auto; /* Margem superior aumentada */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 1.2rem; /* Tamanho da fonte */
+    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+#backButton:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+    transform: translateY(-2px); /* Leve elevação ao passar o mouse */
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header */
+/* Header */
+header {
+    text-align: center;
+    padding: 30px; /* Diminui o espaçamento interno do cabeçalho */
+    background: linear-gradient(135deg, #c0c0c0, #f5f5f5, #d4d4d4);
+    border-bottom: 4px solid #000000;
+    font-size: 24px; /* Diminui o tamanho da fonte do cabeçalho */
+}
+
+header h1 {
+    font-size: 36px; /* Diminui o tamanho do título */
+    margin: -10px 0 0 0; /* Ajusta a margem superior para menos negativa */
+    text-align: center; /* Centraliza o texto */
+    color: #333;
+    font-family: 'Press Start 2P', cursive; /* Mantém a tipografia */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #c0c0c0, #f5f5f5, #d4d4d4);
+    border-top: 4px solid #000;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-gif {
+    width: 50px;
+    position: absolute;
+    bottom: -490px;
+    right: 10px;
+}
+.back-button {
+    position: absolute; /* Mantém a posição absoluta */
+    top: 20px; /* Diminui ainda mais para subir o botão */
+    right: 20px; /* Distância da borda direita do cabeçalho */
+    padding: 15px 30px; /* Aumenta o espaçamento interno */
+    font-size: 18px; /* Aumenta o tamanho da fonte */
+    cursor: pointer;
+    background-color: #049047; /* Cor de fundo */
+    border: 2px solid #333; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    color: #333; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+    font-family: 'Press Start 2P', cursive; /* Tipografia desejada */
+    width: 200px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+}
+
+.back-button:hover {
+    background-color: #ffad15e5; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.1); /* Levemente aumenta o tamanho ao passar o mouse */
+}
+#pokemonDetails {
+    background-color: #ffffff; /* Fundo branco para melhor contraste */
+    padding: 30px; /* Aumenta o padding para mais espaço interno */
+    border-radius: 10px; /* Arredonda mais as bordas */
+    max-width: 320px; /* Largura máxima aumentada */
+    margin: 20px auto; /* Margem superior e inferior aumentadas */
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
+    transition: box-shadow 0.3s; /* Transição suave para a sombra */
+    border: 2px solid #333; /* Adiciona contorno */
+}
+
+#evolutionChain {
+    margin: 20px auto; /* Espaçamento maior */
+    max-width: 900px; /* Largura máxima para a cadeia de evolução */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os itens */
+    border: 2px solid #333; /* Adiciona contorno */
+    padding: 20px; /* Adiciona padding interno */
+    border-radius: 10px; /* Arredonda as bordas do contorno */
+}
+
+#evolutionChain div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+

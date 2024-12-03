@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorador de Habilidades de Pokémon</title>
+    <link rel="stylesheet" href="CSS/habilidades.css">
+</head>
+<body>
+
+    <audio id="musicPlayer" autoplay>
+        <source src="musics/Habilidades1.mp4" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <a href="MenuPrincipal.html"><div class="back-button">&#8592;</div></a>
+    <div class="sidebar">
+        <h2>Habilidades</h2>
+        <ul id="abilityList"></ul>
+    </div>
+
+    <div class="container">
+        <h1>Explorador de Habilidades de Pokémon</h1>
+        
+        <!-- Barra de pesquisa -->
+        <div class="search">
+            <input type="text" id="abilitySearch" placeholder="Digite o nome da habilidade..." oninput="searchAbility()">
+        </div>
+
+        <!-- Seção para informações da habilidade -->
+        <div class="abilities">
+            <h2>Detalhes da Habilidade</h2>
+            <div id="abilityDetails"></div>
+        </div>
+
+        <!-- Seção para lista de Pokémon com a habilidade -->
+        <div class="pokemon-list">
+            <h2>Pokémon com esta Habilidade</h2>
+            <ul id="pokemonList"></ul>
+        </div>
+    </div>
+    <script src="JS/Habilidades.js"></script>
+</body>
+</html>

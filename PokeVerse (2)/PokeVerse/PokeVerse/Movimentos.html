@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movimentos do Pokémon</title>
+  <link rel="stylesheet" href="CSS/Movimentos.css">
+</head>
+<body>
+
+  <audio id="musicPlayer" autoplay>
+    <source src="musics/Movimentos1.mpeg" type="audio/mpeg">
+    Seu navegador não suporta o elemento de áudio.
+</audio>
+
+  <header>
+    <a href="MenuPrincipal.html"><div class="back-button">&#8592;</div></a>
+    <h1>Movimentos do Pokémon</h1>
+    <input type="text" id="searchInput" placeholder="Digite o ID ou nome do Pokémon">
+    <button onclick="fetchPokemon()">Pesquisar</button>
+  </header>
+
+  <div class="container">
+    <div class="pokemon-info" id="pokemonInfo">
+      <!-- Nome e imagem do Pokémon serão inseridos aqui -->
+    </div>
+
+    <table id="movesTable">
+      <thead>
+        <tr>
+          <th>Nível e Movimento</th>
+          <th>Tipo</th>
+          <th>Dano</th>
+          <th>Precisão</th>
+          <th>Descrição</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Os movimentos serão inseridos aqui dinamicamente -->
+      </tbody>
+    </table>
+  </div>
+  <script src="JS/Movimentos.js"></script>
+</body>
+</html>

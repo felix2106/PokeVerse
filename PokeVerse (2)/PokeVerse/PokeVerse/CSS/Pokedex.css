@@ -1,0 +1,348 @@
+body {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    background-image: url('data:image/jpeg;base64,...'); /* Continue com sua imagem base64 */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 18px;
+    margin: 0;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #007acc;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* Reset básico */
+/* Reset básico */
+/* Reset básico */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #c0c0c0, #f5f5f5, #d4d4d4);
+    border-bottom: 4px solid #000000;
+    font-size: 24px;
+    color: #333;
+}
+
+header h1 {
+    font-size: 48px; /* Tamanho do título */
+    margin: -40px 0 0 0; /* Reduz a margem superior */
+    text-align: center; /* Centraliza o texto */
+    color: #333;
+    font-family: 'Press Start 2P', cursive; /* Mantém a tipografia */
+}
+
+/* Barra de pesquisa */
+.search-bar {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 10px; /* Espaçamento entre o input e o botão */
+    margin: 20px 0; /* Margem para espaçamento */
+    
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box; /* Garante que o padding não expanda o tamanho total */
+    width: 270px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #71e66d;
+    border: 2px solid #333;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin-top: -10px; /* Sobe o botão em relação ao input */
+    font-family: 'Press Start 2P', cursive; /* Mantém a tipografia */
+    width: 125px;
+    height: 40px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
+}
+
+
+
+.search-bar button:hover {
+    background-color: #0fad17e5;
+    transform: scale(1.2); /* Aumenta o tamanho do ícone */
+}
+
+/* Retângulo para as informações */
+.info-box {
+    width: 510px;  /* Largura aumentada para 900px */
+    height: 560px;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #c0c0c0, #f5f5f5, #d4d4d4);
+    border: 3px solid #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 280px;
+    overflow-y: auto;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 70vh; /* Ajuste a altura conforme necessário */
+}
+
+#pokemonInfo {
+    width: 30vw !important;
+    height: 6000vw !important;
+    flex: 1;
+    background: linear-gradient(135deg, rgba(0, 173, 255, 0.4), rgba(0, 140, 255, 0.3), rgba(0, 100, 255, 0.5)); /* Gradiente azul com opacidade */
+    backdrop-filter: blur(8px); /* Efeito de desfoque */
+    padding: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Borda suave */
+    border-radius: 10px;
+    max-width: none;
+    overflow: auto;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar um efeito de profundidade */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho para dar um toque mais "reflexivo" */
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo transparente para simular reflexo */
+}
+
+#pokemonInfo::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Cor do reflexo */
+    transform: translate(-50%, -50%);
+    filter: blur(10px); /* Blur para suavizar o reflexo */
+    z-index: -1;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Sombra para reforçar o reflexo */
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(135deg, #c0c0c0, #f5f5f5, #d4d4d4);
+    border-top: 4px solid #000;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-gif {
+    width: 50px;
+    position: absolute;
+    bottom: -150px;
+    right: 10px;
+}
+
+#pokeball:hover {
+    transform: scale(1.1);
+}
+
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com opacidade */
+    border: 2px solid #000; /* Borda preta */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    width: 80%; /* Largura do retângulo */
+    max-width: 800px; /* Largura máxima */
+    margin: auto; /* Centralizar no eixo horizontal */
+}
+
+.search-section {
+    display: flex; /* Habilita layout flex */
+    align-items: center; /* Centraliza verticalmente os itens */
+    justify-content: space-between; /* Espaça os itens */
+    gap: 20px; /* Espaçamento entre os itens */
+    padding: 20px;
+    border: 2px solid #000; /* Para destacar a área */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+#pokeball {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://cdn.pixabay.com/photo/2016/09/01/09/31/pokemon-1635610_1280.png'); /* URL da imagem da pokébola */
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#pokeball:hover {
+    transform: scale(1.1);
+}
+
+.search-inputs {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: flex-start; /* Alinha à esquerda */
+    gap: 10px; /* Espaçamento entre os elementos */
+}
+
+
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+            width: 80%;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #pokemonInfo {
+            margin-top: 20px;
+        }
+
+        #pokemonInfo img {
+            max-width: 150px;
+        }
+
+        #pokeball {
+            width: 100px;
+            height: 100px;
+            background-image: url('https://cdn.pixabay.com/photo/2016/09/01/09/31/pokemon-1635610_1280.png'); /* URL da imagem da pokébola */
+            background-size: cover;
+            margin: auto;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        #pokeball:hover {
+            transform: scale(1.1);
+        }
+
+        p {
+            margin: 10px; /* Remove margens das descrições */
+        }
+        
+        .back-button {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        @keyframes shake {
+    0% { transform: translate(0); }
+    25% { transform: translate(-5px); }
+    50% { transform: translate(5px); }
+    75% { transform: translate(-5px); }
+    100% { transform: translate(0); }
+}
+
+button#clearButton {
+    padding: 10px 15px;
+    background-color: #e25656;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: background-color 0.3s;
+    font-family: 'Press Start 2P', cursive; /* Mantém a tipografia */
+    height: 40px;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Transição suave */
+}
+
+button#clearButton:hover {
+    background-color: #ff0000;
+    transform: scale(1.2); /* Aumenta o tamanho do ícone */
+}
+
+
+/* Estilo para o botão de voltar */
+.back-button {
+    position: fixed;
+    top: 20px; /* Distância do topo da tela */
+    right: 20px; /* Distância da borda direita da tela */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #fffb00;
+    border: 2px solid #333;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-family: 'Press Start 2P', cursive;
+    width: 150px;
+    height: 40px;
+}
+
+.back-button:hover {
+    background-color: #ffad15e5;
+    transform: scale(1.2); /* Aumenta o tamanho do botão ao passar o mouse */
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Pokémon</title>
+    <link rel="stylesheet" href="CSS/Quiz.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>QUIZ</h1>
+        <a href="Menu.html">
+            <button class="back-button">Voltar</button>
+        </a>
+</header>
+    <div class="container">
+        <div id="difficultySelection" class="difficulty-container">
+            <h2>Selecione a Dificuldade</h2>
+            <button onclick="startQuiz('easy')">Fácil</button>
+            <button onclick="startQuiz('medium')">Médio</button>
+            <button onclick="startQuiz('hard')">Hard</button>
+            <button onclick="startQuiz('expert')">Expert</button>
+        </div>
+        <div id="quizContainer" class="quiz-container" style="display: none;">
+            <p id="questionText"></p>
+            <div id="options">
+                <button id="option0"></button>
+                <button id="option1"></button>
+                <button id="option2"></button>
+                <button id="option3"></button>
+            </div>
+            <p id="resultMessage"></p>
+            <p id="score">Pontuação: 0</p>
+            <div id="gameOver" style="display: none;">
+                <p>Game Over!</p>
+                <button onclick="restartQuiz()">Tentar Novamente</button>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <br>
+        <p>@ 2024 PokeVerse - Interfaces Web - 2Aa Informática</p>
+        <img src="https://25.media.tumblr.com/144d30a86c175d0d4843b26669913b30/tumblr_msu2d6x4WM1scncwdo1_500.gif" alt="Pikachu" class="footer-gif">
+    </footer>
+    <script src="JS/Quiz.js"></script>
+</body>
+</html>
